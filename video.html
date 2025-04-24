@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>videos</title>
+		  <link rel="stylesheet" href="Edit.css">
+    </head>
+
+   <body class = "vidbody">
+	
+	
+	  <div class="logo">
+                                <img src="logo.png" alt="There is nothing here">
+                </div>
+	  <div class="main">
+	  
+					<nav class = "navigation">
+                            <ul>
+                                <li class="active"><a href="tempo.html">HOME</a></li>
+                                <li><a href="About.html">ABOUT US</a></li>
+                                <li><a href="Contact.html">CONTACT US</a></li>
+                                <li><a href="test.html">TESTIMONIALS</a></li>
+                                
+                            </ul>
+							</nav>
+                        </div>
+                  
+                        <br><br><br><br><br><br><br><br><br>		
+        <div class="heading">
+            <hr>
+            <br><br><br>
+
+        <h1>VIDEOS</h1>
+		<br><br><br>
+        </div>
+        <div class="parag">
+           
+            <P>
+                       
+                <div class="vidwrapper">
+
+                    <video controls class="myvideo">
+                        <p style="color: white;"> Sesotho Dance </p>
+                    
+                        <source src="vid1.mp4" type="video/mp4" > 
+                       
+                        </video> <br><br>
+                        <video controls class="myvideo">
+                            <p> Mokgibo </p>
+                        
+                            <source src="vid2.mp4" type="video/mp4"> 
+                           
+                            </video><br><br>
+                            <video controls class="myvideo">
+                                <p> Group Celebration </p>
+                        
+                                <source src="vid3f.mp4" type="video/mp4"> 
+                               
+                                </video><br><br>
+                                <video controls class="myvideo">
+                                    <p> Group Celebration </p>
+                            
+                                    <source src="Group1.mp4" type="video/mp4"> 
+                                   
+                                    </video><br><br>
+
+                                    <video controls class="myvideo">
+                                        <p> Group Celebration </p>
+                                
+                                        <source src="vid last.mp4" type="video/mp4"> 
+                                       
+                                        </video><br><br>
+                               
+                                        
+                                                        
+                                    </video>
+    
+
+                </div>
+                
+</div>
+<script>
+    const videos = document.querySelectorAll('myvideo');
+
+    videos.forEach(video => {
+        video.addEventListener('play', () =>{
+            videos.forEach(otherVideo => {
+                if (othervid !== video){
+                    othervid.pause();
+                }
+            });
+        });
+    });
+</script>
+ <br><br><br><br>
+
+    
+            </P>
+
+    
+            </P>
+
+        </div>
+      
+        
+    </body>
+</html>

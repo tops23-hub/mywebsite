@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CELEBRATION</title>
+		  <link rel="stylesheet" href="Edit.css">
+    </head>
+
+   <body class = "body">
+	
+	
+	  <div class="logo">
+                                <img src="logo.png" alt="There is nothing here">
+                </div>
+	  <div class="main">
+	  
+					<nav class = "navigation">
+                            <ul>
+                                <li class="active"><a href="tempo.html">HOME</a></li>
+                                <li><a href="About.html">ABOUT US</a></li>
+                                <li><a href="Contact.html">CONTACT US</a></li>
+                                <li><a href="test.html">TESTIMONIALS</a></li>
+                                
+                            </ul>
+							</nav>
+                        </div>
+						
+        <div class="heading">
+
+        <h1>CELEBRATION</h1>
+		<br><br><br>
+        </div>
+        <div class="parag">
+           
+            <P>
+           
+
+                <video controls class="myvideos">
+                    
+                    <source src="vid3f.mp4" type="video/mp4" > 
+                   
+                    </video> <br><br>
+
+                    <img src="group2.jpg" alt="">
+                    <img src="group3.jpg" alt="">
+                    <img src="group4.jpg" alt="">
+                    <img src="group5.jpg" alt="">
+
+</div>
+
+<script>
+    const videos = document.querySelectorAll('myvideo');
+
+    videos.forEach(video => {
+        video.addEventListener('play', () =>{
+            videos.forEach(otherVideo => {
+                if (othervid !== video){
+                    othervid.pause();
+                }
+            });
+        });
+    });
+</script>
+ <br><br><br><br>
+
+    
+            </P>
+
+    
+            </P>
+
+        </div>
+      
+        
+    </body>
+</html>
